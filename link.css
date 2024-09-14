@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/677/104/small_2x/white-background-with-blue-geometric-and-white-line-pattern-free-vector.jpg);
+    background-size: cover;
+}
+.container{
+    height: 350px;
+    width: 500px;
+}
+#intro{
+    width: 500px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    border: 10px groove black;
+    border-radius: 40px;
+}
+#time{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    border: 10px groove black;
+    border-radius: 40px;
+
+}
+#regi{
+    width: 500px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    border: 10px groove black;
+    border-radius: 40px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

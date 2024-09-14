@@ -1,0 +1,53 @@
+td{
+    text-align: center;
+    padding: 5px;
+    border: 2px solid black;
+}
+table{
+    width: 100%;
+    background-image: url(https://img.freepik.com/premium-vector/low-poly-abstract-texture-background-red-color-design-vector_490655-341.jpg);
+    color: white;
+    
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+#obj{
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #bbe4e9;
+
+}
+input{
+    margin-left: 40px;
+}
+#container{
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #bbe4e9;
+}
+button{
+    width: 150px;
+    border-radius: 40px;
+}
+.but{
+    height: 100px;
+    margin-top: 20px;
+    /* border: 2px solid black;
+    border-radius: 20px;
+    background-color: #bbe4e9; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover{
+    background-color: hsl(240, 95%, 25%);
+    color: white;
+}

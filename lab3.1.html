@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab3.1.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action.php">
+        <table>
+            <tr><td colspan="2" style="text-align: center;"> <h2>Registration Form</h2></td></tr>
+            <tr>
+                <td><label for="first_name">First Name:</label></td>
+                <td><input type="text" id="first_name" placeholder="Purushottam" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label for="last_name">Last Name:</label></td>
+                <td><input type="text" id="last_name" placeholder="Thakur" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email ID:</label></td>
+                <td><input type="email" id="email" placeholder="buuixwqiu78@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile Number:</label></td>
+                <td><input type="tel" id="mobile" placeholder="7894xxxxxx" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td ><input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label></td>
+            </tr>
+            <tr>
+                <td><label>Date of Birth:</label></td>
+                <td>
+                    <select name="dob_day" id="dob_day">
+                        <option value="">Day</option>
+                        <!-- Add options for days 1-31 -->
+                        <script>
+                            for (let i = 1; i <= 31; i++) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+                    <select name="dob_month" id="dob_month">
+                        <option value="">Month</option>
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">Apr</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+                    <select name="dob_year" id="dob_year">
+                        <option value="">Year</option>
+                        <!-- Add options for years -->
+                        <script>
+                            for (let i = 1980; i <= new Date().getFullYear(); i++) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" id="city" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label for="pin_code">Pin Code:</label></td>
+                <td><input type="number" id="pin_code" maxlength="6"></td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td><input type="text" id="state" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td><input type="text" id="country" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><label>Hobbies:</label></td>
+                <td style="width: 400px;"><input type="checkbox" id="drawing" name="hobbies" value="drawing"><label for="drawing">Drawing</label>
+                <input type="checkbox" id="singing" name="hobbies" value="singing"><label for="singing">Singing</label>
+                <input type="checkbox" id="dancing" name="hobbies" value="dancing"><label for="dancing">Dancing</label>
+            <input type="checkbox" id="sketching" name="hobbies" value="sketching"><label for="sketching">Sketching</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="others" name="hobbies" value="others"><label for="others">Others:</label><input type="text" id="other_details"></td>
+            </tr>
+            <tr><td></td><td></td></tr>
+            <tr>
+                <td rowspan="5"><label>Qualification:</label></td>
+                <td><input type="checkbox" id="high_school" name="qualification" value="high_school"><label for="high_school">High School (10th)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="higher_school" name="qualification" value="higher_school"><label for="higher_school">Higher School (12th)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="graduation" name="qualification" value="graduation"><label for="graduation">Graduation (Bachelors)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="post_graduation" name="qualification" value="post_graduation"><label for="post_graduation">Post Graduation (Masters)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="phd" name="qualification" value="phd"><label for="phd">PhD</label></td>
+            </tr>
+            <tr><td></td><td></td></tr>
+            <tr>
+                <td rowspan="8"><label>Course Applied For:</label></td>
+                <td><input type="checkbox" id="bca" name="course" value="bca"><label for="bca">BCA (Bachelor of Computer Applications)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="bcom" name="course" value="bcom"><label for="bcom">B.Com (Bachelor of Commerce)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="bsc" name="course" value="bsc"><label for="bsc">B.Sc (Bachelor of Science)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="ba" name="course" value="ba"><label for="ba">BA (Bachelor of Arts)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="mca" name="course" value="mca"><label for="mca">MCA (Master of Computer Applications)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="mcom" name="course" value="mcom"><label for="mcom">M.Com (Master of Commerce)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="msc" name="course" value="msc"><label for="msc">M.Sc (Master of Science)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="ma" name="course" value="ma"><label for="ma">MA (Master of Arts)</label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="display: flex;justify-content: space-between;"><button type="submit">Submit</button>
+                    <button type="reset">Reset</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
